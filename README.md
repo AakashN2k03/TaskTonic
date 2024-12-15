@@ -77,3 +77,64 @@ Once the server is running, you can test the GraphQL API:
 Instructions:
 - Open a browser or Postman
 - Navigate to `http://localhost:4000/graphql`
+
+## GraphQL Queries
+
+Here are some example GraphQL queries you can use:
+
+### Add a Todo
+
+```graphql
+mutation { 
+  addTodo(title: "Learn Node.js", description: "Learn how to build backend with Node.js") { 
+    id 
+    title 
+    description 
+  } 
+}
+```
+
+*Explanation*: This query creates a new todo item with the title "Learn Node.js" and the description "Learn how to build backend with Node.js."
+
+### Get All Todos
+
+```graphql
+query { 
+  getTodos { 
+    id 
+    title 
+    description 
+  } 
+}
+```
+
+*Explanation*: This query fetches all todos from the database, returning their `id`, `title`, and `description`.
+
+### Update a Todo
+
+```graphql
+mutation { 
+  updateTodo(id: 1, title: "Learn GraphQL", description: "Learn how to use GraphQL") { 
+    id 
+    title 
+    description 
+  } 
+}
+```
+
+*Explanation*: This mutation updates an existing todo item (with ID `1`) to have the new title and description.
+
+### Delete a Todo
+
+```graphql
+mutation { 
+  deleteTodo(id: 1) { 
+    id 
+    title 
+    description 
+  } 
+}
+```
+
+*Explanation*: This mutation deletes a todo item by its `id` (in this case, `1`), and returns the deleted todo's details.
+
