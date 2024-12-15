@@ -9,8 +9,8 @@ const AppDataSource = new DataSource({
   type: 'postgres',
   host: 'localhost',
   port: 5432,
-  username: 'postgres',
-  password: 'AakashPostgresql2024',
+  username: 'your_username',
+  password: 'your_password',
   database: 'todo_app',
   entities: [path.join(__dirname, 'entities', 'Todo.ts')],  // Ensure correct entity path
   synchronize: true,  // Keep false in production
