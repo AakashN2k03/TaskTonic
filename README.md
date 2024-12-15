@@ -22,7 +22,7 @@ A simple **Todo List** project built with **Node.js**, **Express**, **PostgreSQL
 Clone the project repository to your local machine:
 
 ```bash
-git clone https://github.com/your-username/your-repository-name.git
+git clone https://github.com/AakashN2k03/TaskTonic.git
 cd your-repository-name
 ```
 
